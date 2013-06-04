@@ -2,7 +2,7 @@ Roadmap
 =======
 
 SCI-WMS is funded by a number of organizations to fufill the specific 
-needs of the Metorological and Oceanographic community. We are 
+needs of the Metorology and Oceanography communities. We are 
 committed to ensuring that the project follows a logical and innovative 
 path, but due to time and budget constraints some enhancements and 
 updates will take precedence over others.
@@ -16,7 +16,18 @@ be found at the project Github `repository <http://github.com/acrosby/sci-wms/is
 Current (|release|)
 ===================
 
-We are currently trying to eliminate some of the major bugs, that are within our control to fix.
+We are currently trying to eliminate some of the major bugs, that are within our control to fix. 
+We are also trying to firm up the functionality and api components before the release of version 1.0.0.
+
+We have recently:
+
+* Added service based api to dataset and group management
+* Solved the dataset topology cache update problem with daemons falling down
+* Added command line topology cache update command
+* Added jsonp responses to avoid clients from needing to proxy xml responses
+* Added test procedures
+* Added support for mutiple fill values via additional variable attribute in dataset
+* We now have generic config files for nginx, upstart and supervisor in addition to the gunicorn config that has always been in the project
 
 ===============
 Version 1.0.0
@@ -37,7 +48,8 @@ Version 1.1.0
 Version 1.2.0
 =============
 
-By this version we would like to see solid support for all datasets that can be expressed by CF, 
+By this version we would like to see solid support for all 
+netCDF/openDAP datasets that can be expressed by CF, 
 anything that is not supported will be considered a bug.
 
 ================================
@@ -53,3 +65,4 @@ Goals not assigned to a version
 * `Scripts to automatically add datasets to server from various cataloging systems <https://github.com/acrosby/sci-wms/issues/22>`_
 * `Add support for hardware based rendering on machines capable of it <https://github.com/acrosby/sci-wms/issues/15>`_
 * Integration with advanced HTML5 browser-based visualization tools
+* Support for HDF5 (local and raw, i.e. not netCDF4) datasets that are CF compliant
