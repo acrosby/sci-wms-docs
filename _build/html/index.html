@@ -49,10 +49,9 @@
             
   <div class="section" id="welcome-to-sci-wms">
 <h1>Welcome to SCI-WMS<a class="headerlink" href="#welcome-to-sci-wms" title="Permalink to this headline">¶</a></h1>
-<p>Here is some text here introducing the SCI-WMS server for netcdf
-and opendap met-ocean data. SCI-WMS is a Python WMS service for geospatial
+<p>SCI-WMS is a Python WMS service for geospatial
 gridded data. It supports triangular unstructured meshes and logically
-rectangular grids.</p>
+rectangular grids including grids referred to as <em>curvilinear</em>.</p>
 <p>If you would like to know if your dataset can be served with SCI-WMS,
 or how to get started with your own SCI-WMS server we would be happy
 to help.</p>
@@ -79,6 +78,25 @@ to help.</p>
 <li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
 </ul>
 </div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>No tools for comparing multiple unstructured models out of the box</li>
+<li>WMS technologies don&#8217;t support unstructured meshes in a format the preserves topology</li>
+<li>Consensus building around a UGRID-CF proposal conventions</li>
+<li>Vast amount of large collections of met-ocean data available over OpenDAP</li>
+</ul>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Syles that preserve unstructured mesh topology</li>
+<li>Sophisticated layer specification and style syntax</li>
+<li>Closely linked to matplotlib the predominant Python library for scientific plotting</li>
+<li>Support for groups of datasets</li>
+<li>Topologically correct GetFeatureInfo querying on unstructured meshes and regular grids</li>
+</ul>
+</div>
 </div>
 
 
@@ -87,6 +105,15 @@ to help.</p>
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to SCI-WMS</a><ul>
+<li><a class="reference internal" href="#background">Background</a></li>
+<li><a class="reference internal" href="#features">Features</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Next topic</h4>
   <p class="topless"><a href="installation.html"
                         title="next chapter">Installation</a></p>

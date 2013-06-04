@@ -16,4 +16,23 @@ Welcome to SCI-WMS
    configure
    using
    roadmap
+   
+==========
+Background
+==========
+
+* No tools for comparing multiple unstructured models out of the box
+* WMS technologies don't support unstructured meshes in a format the preserves topology
+* Consensus building around a UGRID-CF proposal conventions
+* Vast amount of large collections of met-ocean data available over OpenDAP
+
+========
+Features
+========
+
+* Syles that preserve unstructured mesh topology
+* Sophisticated layer specification and style syntax
+* Closely linked to matplotlib the predominant Python library for scientific plotting
+* Support for groups of datasets
+* Topologically correct GetFeatureInfo querying on unstructured meshes and regular grids
 
