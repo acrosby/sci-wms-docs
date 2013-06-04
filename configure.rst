@@ -50,6 +50,10 @@ and the trailing "/":
     
 Choose an appropriate nickname for the "Display Name" field.
 
+======================
+SCI-WMS Administration
+======================
+
 *******************
 Adding Datasets
 *******************
