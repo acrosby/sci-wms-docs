@@ -12,6 +12,16 @@ the `SCI-WMS Google Group <https://groups.google.com/forum/?fromgroups#!forum/sc
 Enhancements that have been accepted by the team for inclusion into the project can 
 be found at the project Github `repository <http://github.com/acrosby/sci-wms/issues?state=open>`_.
 
+===================
+Current (|release|)
+===================
+
+We are currently trying to eliminate some of the major bugs, that are within our control to fix.
+
+===============
+Version 1.0.0
+===============
+
 The target for Version 1.0.0 is a server that is:
 
 * Well documented
@@ -19,7 +29,20 @@ The target for Version 1.0.0 is a server that is:
 * Easy to administer
 * Stable
 
-Important enhancements in the queue include:
+=============
+Version 1.1.0
+=============
+
+=============
+Version 1.2.0
+=============
+
+By this version we would like to see solid support for all datasets that can be expressed by CF, 
+anything that is not supported will be considered a bug.
+
+================================
+Goals not assigned to a version
+================================
 
 * Better support for unconventional but CF compliant datasets
 * `Styles that express uncertainty, like in climate modeling <https://github.com/acrosby/sci-wms/issues/77>`_
